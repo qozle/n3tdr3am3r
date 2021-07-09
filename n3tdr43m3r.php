@@ -45,14 +45,13 @@ function find_url(){
 //  Pick a random IP address, see if we get data from it.  
 $valid_ip = find_url();
 
-
-
 //  Crawl the site, build a list of all internal URLs, pick a random one.
 $netCrawlObserver = new NetCrawlObserver();
 Crawler::create()
     ->setCrawlObserver($netCrawlObserver)
     ->setCrawlProfile(new \Spatie\Crawler\CrawlProfiles\CrawlInternalUrls($valid_ip))
     ->startCrawling($valid_ip);
+
 
 
 
