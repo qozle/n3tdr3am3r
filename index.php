@@ -136,11 +136,10 @@ $img_num = rand(1,5);
                                 $('#main-table').append("<p id='error-text'>Ooops, there was an error...reload and try again...<p>");
                             }
                         }
-                    })
+                    });
                 })
 
-            })
-            //  JS goes here, derp
+            });
         </script>
     </body>
 
