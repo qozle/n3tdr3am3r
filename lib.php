@@ -138,12 +138,6 @@ function get_ai_text($text){
     } else {
         if($debug) echo "We got an error when trying to get the AI text: {$respCode}\n";
     }
-
-
-    // curl \
-    // -F 'text=YOUR_TEXT_URL' \
-    // -H 'api-key:quickstart-QUdJIGlzIGNvbWluZy4uLi4K' \
-    // https://api.deepai.org/api/text-generator 
 }
 
 
